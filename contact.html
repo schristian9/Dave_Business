@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact DAVE to buy, sell or source heavy equipment."
+    />
+    <title>Contact DAVE — Let's Talk Equipment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="enhancements.css" />
+    <link rel="stylesheet" href="editorial.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">DAVE<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#equipment">Equipment</a
+        ><a href="index.html#source">Source</a><a href="index.html#sell">Sell</a
+        ><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+      <a class="header-contact" href="contact.html">Enquire <span>↗</span></a>
+    </header>
+    <main>
+      <section class="section wrap contact-grid">
+        <div>
+          <p class="eyebrow">Contact DAVE</p>
+          <h2>Let’s Talk<br />Equipment.</h2>
+          <p>
+            Looking to buy, sell or source equipment? Get in touch with DAVE.
+          </p>
+          <p>
+            <strong>Email</strong><br /><a
+              class="text-link"
+              href="mailto:hello@davemachinery.com"
+              >hello@davemachinery.com <span>↗</span></a
+            >
+          </p>
+          <p><strong>Phone</strong><br /><span>[INSERT PHONE NUMBER]</span></p>
+          <p><strong>Location</strong><br /><span>UK</span></p>
+        </div>
+        <form id="contact-form" class="light-form" novalidate>
+          <label>Name<input name="name" required autocomplete="name" /></label
+          ><label
+            >Company<input name="company" autocomplete="organization" /></label
+          ><label
+            >Email<input
+              type="email"
+              name="email"
+              required
+              autocomplete="email" /></label
+          ><label>Phone<input name="phone" autocomplete="tel" /></label
+          ><label
+            >What can we help with?<input
+              id="equipment"
+              name="equipment"
+              required /></label
+          ><label>Message<textarea rows="5" name="message"></textarea></label
+          ><button class="button amber" type="submit">
+            Send Enquiry <b>→</b>
+          </button>
+          <p class="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-bottom">
+        <span>© DAVE. All rights reserved.</span
+        ><span
+          ><a href="index.html">Home</a><a href="about.html">About</a></span
+        >
+      </div>
+    </footer>
+    <script>
+      const input = document.querySelector("#equipment"),
+        params = new URLSearchParams(location.search);
+      if (params.get("equipment"))
+        input.value = `I'm interested in ${params.get("equipment")}.`;
+      if (params.get("type") === "sell")
+        input.value = "I would like to sell equipment.";
+      document
+        .querySelector("#contact-form")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          const f = e.currentTarget,
+            m = f.querySelector(".form-message");
+          if (!f.checkValidity()) {
+            f.reportValidity();
+            m.textContent = "Please complete your name, email and enquiry.";
+            return;
+          }
+          m.textContent = "Thank you — your enquiry is ready to send.";
+          f.reset();
+        });
+    </script>
+  </body>
+</html>

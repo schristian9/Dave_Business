@@ -1,0 +1,245 @@
+.equipment-card > a {
+  color: inherit;
+  text-decoration: none;
+}
+.principles {
+  padding-bottom: 110px;
+}
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.principle-grid article {
+  border-top: 1px solid var(--ink);
+  padding-top: 14px;
+}
+.principle-grid span {
+  font-size: 11px;
+  color: #a97600;
+}
+.principle-grid h3 {
+  font-size: 31px;
+  margin-top: 42px;
+}
+.principle-grid p {
+  color: var(--muted);
+  font-size: 12px;
+  max-width: 210px;
+}
+.sell-panel {
+  background: #dedcd5;
+}
+.sell-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+}
+.sell-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.7);
+}
+.sell-grid > div:last-child {
+  padding: 75px 10%;
+  align-self: center;
+}
+.sell-grid h2 {
+  font: 600 67px/0.84 var(--display);
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+.sell-grid h2 em {
+  color: var(--amber);
+  font-style: normal;
+}
+.sell-grid h2 + p {
+  max-width: 360px;
+  font-size: 14px;
+  margin: 27px 0;
+}
+.process {
+  padding-top: 110px;
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.process ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.process li {
+  display: flex;
+  gap: 20px;
+  padding: 19px 0;
+  border-top: 1px solid var(--line);
+}
+.process li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.process li > span {
+  font-size: 11px;
+  color: #a97600;
+}
+.process h3 {
+  font: 600 26px/1 var(--display);
+  margin: 0;
+}
+.process li p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+.trust {
+  background: var(--amber);
+  padding: 36px 0;
+}
+.trust .eyebrow {
+  color: #5c4500;
+  margin-bottom: 21px;
+}
+.trust .wrap > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font: 600 30px var(--display);
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.footer-nav a {
+  color: var(--ink);
+  font-size: 12px;
+  text-decoration: none;
+}
+.footer-bottom a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 18px;
+}
+.page-hero {
+  background: var(--ink);
+  color: #fff;
+  padding: 100px 0 75px;
+}
+.page-hero h1 {
+  font: 600 clamp(62px, 8vw, 108px)/0.82 var(--display);
+  margin: 0;
+}
+.page-hero h1 em {
+  color: var(--amber);
+  font-style: normal;
+}
+.page-hero p:last-child {
+  max-width: 470px;
+  margin: 26px 0 0;
+}
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+.about-story h2 {
+  font: 600 60px/0.86 var(--display);
+  margin: 0;
+}
+.about-story p {
+  font-size: 15px;
+  color: #55554e;
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 55px;
+}
+.detail-photo img {
+  width: 100%;
+  height: 570px;
+  object-fit: cover;
+}
+.specs {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0;
+}
+.specs th,
+.specs td {
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+  font-size: 13px;
+}
+.specs th {
+  color: var(--muted);
+  font-weight: 400;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.contact-grid h2 {
+  font: 600 63px/0.85 var(--display);
+  margin: 0;
+}
+.contact-grid p {
+  max-width: 410px;
+}
+.light-form label {
+  color: var(--ink);
+}
+.light-form input,
+.light-form textarea {
+  color: var(--ink);
+  border-color: var(--line);
+}
+@media (max-width: 750px) {
+  .principle-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 20px;
+  }
+  .principle-grid h3 {
+    margin-top: 22px;
+  }
+  .sell-grid,
+  .process-grid,
+  .about-story,
+  .detail-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .sell-photo {
+    height: 270px;
+  }
+  .sell-grid > div:last-child {
+    padding: 55px 0;
+  }
+  .sell-grid h2,
+  .contact-grid h2 {
+    font-size: 56px;
+  }
+  .process-grid {
+    gap: 48px;
+  }
+  .trust .wrap > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 25px;
+    gap: 13px;
+  }
+  .footer-nav {
+    margin-top: 35px;
+  }
+  .detail-photo img {
+    height: 320px;
+  }
+  .page-hero {
+    padding: 70px 0 55px;
+  }
+}

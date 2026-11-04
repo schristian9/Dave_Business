@@ -5,299 +5,360 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="DAVE sources and sells quality heavy equipment for UK and international buyers."
+      content="DAVE sources, inspects and supplies heavy earthmoving and construction equipment for UK and international operators."
     />
-    <title>DAVE — Heavy Equipment. Sourced Right.</title>
+    <title>DAVE Machinery — Heavy Equipment Sourced Right</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="enhancements.css" />
-    <link rel="stylesheet" href="editorial.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="DAVE home">DAVE<span>.</span></a>
+      <a class="brand" href="index.html" aria-label="DAVE Machinery home">DAVE<span>.</span></a>
       <button
         class="menu-toggle"
         aria-label="Open navigation"
         aria-expanded="false"
       >
-        <i></i><i></i>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
       <nav aria-label="Main navigation">
-        <a href="#equipment">Equipment</a><a href="#source">Source</a
-        ><a href="#sell">Sell</a><a href="about.html">About</a
-        ><a href="contact.html">Contact</a>
+        <a href="#equipment" class="active">Equipment</a>
+        <a href="#source">Source</a>
+        <a href="#sell">Sell</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <a class="header-contact" href="#contact">Talk to DAVE <span>↗</span></a>
+      <a class="header-contact" href="contact.html">
+        <span>Talk to DAVE</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </a>
     </header>
 
     <main id="top">
-      <section class="hero hero-full" aria-labelledby="hero-title">
-        <img
-          src="assets/images/hero-fleet.webp"
-          alt="A lineup of excavators, loaders and dump trucks"
-        />
-        <div class="hero-shade"></div>
-        <div class="hero-content wrap">
-          <h1 id="hero-title">Heavy Equipment.<br /><em>Sourced Right.</em></h1>
-          <p class="hero-intro">
-            Practical equipment, clearly presented and sourced with the job in
-            mind.
-          </p>
-          <div class="button-row">
-            <a class="button amber" href="#equipment"
-              >Browse Equipment <b>→</b></a
-            ><a class="button ghost" href="#contact">Talk to DAVE <b>→</b></a>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="wrap">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <p class="eyebrow">Heavy Plant Sourcing &amp; Sales</p>
+              <h1 id="hero-title">Heavy Equipment.<br /><span class="highlight">Sourced Right.</span></h1>
+              <p class="hero-intro">
+                Direct sourcing, verified machine history, and prompt UK and international delivery for earthmoving, lifting and civil construction plant.
+              </p>
+              <div class="button-row">
+                <a class="button primary" href="#equipment">
+                  Browse Equipment
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a class="button secondary" href="#source">
+                  Request Specific Machine
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <img
+                src="assets/images/hero-fleet.webp"
+                alt="Fleet of excavators, loaders and articulated dump trucks ready on site"
+                loading="eager"
+              />
+              <div class="hero-tag">
+                <span class="dot"></span>
+                <span>Active Fleet Inventory · UK Yard</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-foot">
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              UK Based Operations
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Worldwide Export Logistics
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Direct Technical Assessment
+            </span>
           </div>
         </div>
-        <div class="hero-foot">
-          <span>Based in the UK</span><span>Global buyers welcome</span
-          ><span>Direct, experienced advice</span>
-        </div>
       </section>
 
-      <section class="actions wrap" aria-label="Quick actions">
-        <a href="#equipment"
-          ><strong>01 / Browse</strong
-          ><span>Available machines, ready to view <b>→</b></span></a
-        >
-        <a href="#source"
-          ><strong>02 / Source</strong
-          ><span>Tell us the work you need done <b>→</b></span></a
-        >
-        <a id="sell" href="#contact"
-          ><strong>03 / Sell</strong
-          ><span>Start a straightforward conversation <b>→</b></span></a
-        >
-        <a href="#contact"
-          ><strong>04 / Contact</strong
-          ><span>Speak to a person at DAVE <b>→</b></span></a
-        >
+      <section class="wrap actions" aria-label="Quick directory">
+        <a href="#equipment">
+          <strong>
+            Browse
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </strong>
+          <span>Inspected machines ready for inspection and transport</span>
+        </a>
+        <a href="#source">
+          <strong>
+            Source
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </strong>
+          <span>Brief us with your machine requirement and timeline</span>
+        </a>
+        <a href="#sell">
+          <strong>
+            Sell
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </strong>
+          <span>Fair valuations and straightforward fleet disposals</span>
+        </a>
+        <a href="contact.html">
+          <strong>
+            Contact
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </strong>
+          <span>Direct telephone and email communication with our team</span>
+        </a>
       </section>
 
-      <section id="equipment" class="inventory section wrap">
+      <section id="equipment" class="section wrap" aria-labelledby="equipment-heading">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Current listings</p>
-            <h2>Equipment Available</h2>
+            <p class="eyebrow">Current Listings</p>
+            <h2 id="equipment-heading">Equipment Available</h2>
           </div>
+          <p class="lead">
+            Every machine is individually inspected, verified for operating hours, and accompanied by service history.
+          </p>
         </div>
-        <div class="inventory-grid" id="inventory-grid"></div>
-        <a class="text-link" href="#contact"
-          >View all equipment <span>→</span></a
-        >
+        <div class="inventory-grid" id="inventory-grid">
+          <!-- Populated by script.js -->
+        </div>
+        <a class="text-link" href="contact.html">
+          Enquire about unlisted machines or upcoming arrivals
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </section>
 
-      <section id="categories" class="categories section">
+      <section id="categories" class="section categories" aria-labelledby="categories-heading">
         <div class="wrap">
-          <p class="eyebrow">Browse by type</p>
-          <div class="category-head">
-            <h2>What are you looking for?</h2>
-            <p>
-              Start with the equipment category, or tell us exactly what you
-              need and we’ll help find it.
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Plant Classification</p>
+              <h2 id="categories-heading">Browse by Machine Category</h2>
+            </div>
+            <p class="lead">
+              From heavy production excavators to compact materials handlers, we supply across all civil sectors.
             </p>
           </div>
-          <div class="category-list" id="category-list"></div>
+          <div class="category-list" id="category-list">
+            <!-- Populated by script.js -->
+          </div>
         </div>
       </section>
 
-      <section
-        class="principles section wrap"
-        aria-labelledby="principles-title"
-      >
+      <section class="section wrap" aria-labelledby="principles-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">The DAVE approach</p>
-            <h2 id="principles-title">
-              Straight answers.<br />Practical work.
-            </h2>
+            <p class="eyebrow">The DAVE Standard</p>
+            <h2 id="principles-title">Straight Answers. Practical Plant.</h2>
           </div>
-          <p>
-            Clear information, direct contact and a focus on the equipment in
-            front of us.
+          <p class="lead">
+            We work without sales jargon or hidden intermediaries. You deal directly with plant specialists who know equipment.
           </p>
         </div>
         <div class="principle-grid">
-          <article>
-            <span>01</span>
-            <h3>Straightforward</h3>
-            <p>Clear communication without unnecessary complexity.</p>
+          <article class="principle-card">
+            <span class="num">01</span>
+            <h3>Direct Assessment</h3>
+            <p>Accurate hour checks, honest wear appraisal, and full walk-around video verification before commitment.</p>
           </article>
-          <article>
-            <span>02</span>
-            <h3>Practical</h3>
-            <p>Equipment selected around real operational requirements.</p>
+          <article class="principle-card">
+            <span class="num">02</span>
+            <h3>Application Match</h3>
+            <p>We source machinery configured specifically for your project ground conditions and duty cycle.</p>
           </article>
-          <article>
-            <span>03</span>
-            <h3>Responsive</h3>
-            <p>Fast communication when equipment needs to move.</p>
+          <article class="principle-card">
+            <span class="num">03</span>
+            <h3>Fast Turnaround</h3>
+            <p>Immediate paperwork processing and rapid dispatch coordination when sites cannot afford downtime.</p>
           </article>
-          <article>
-            <span>04</span>
-            <h3>Global Reach</h3>
-            <p>UK-based, working with international buyers.</p>
+          <article class="principle-card">
+            <span class="num">04</span>
+            <h3>Global Export</h3>
+            <p>Established freight handling, export documentation, and port delivery for international buyers.</p>
           </article>
         </div>
       </section>
 
-      <section class="feature section wrap" aria-labelledby="feature-title">
+      <section class="section wrap" aria-labelledby="feature-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Selected machinery</p>
-            <h2 id="feature-title">Worth a Look</h2>
+            <p class="eyebrow">Featured Plant</p>
+            <h2 id="feature-title">Selected Machinery</h2>
           </div>
+          <p class="lead">
+            Notable additions to our current inventory, prepped for immediate work.
+          </p>
         </div>
         <article class="feature-item">
           <div class="feature-photo">
             <img
               src="assets/images/excavator.jpeg"
-              alt="Yellow excavator at a construction site"
+              alt="CAT 336 crawler excavator with heavy rock bucket"
+              loading="lazy"
             />
           </div>
           <div class="feature-copy">
-            <p class="eyebrow">Crawler excavator</p>
-            <h3>CAT 336</h3>
+            <p class="eyebrow">Crawler Excavator</p>
+            <h3>Caterpillar 336</h3>
             <dl>
               <div>
                 <dt>Year</dt>
-                <dd>2022</dd>
+                <dd class="tabular">2022</dd>
               </div>
               <div>
                 <dt>Hours</dt>
-                <dd>3,420</dd>
+                <dd class="tabular">3,420 hrs</dd>
               </div>
               <div>
-                <dt>Location</dt>
-                <dd>UK</dd>
+                <dt>Weight</dt>
+                <dd class="tabular">37.2 t</dd>
               </div>
             </dl>
             <p>
-              Low-hour excavator, prepared for work and ready to inspect.
-              Contact DAVE for the full specification.
+              Tier 4 Final engine, auxiliary hydraulic lines, quick coupler and full maintenance history from one UK civil operator.
             </p>
-            <a class="text-link" href="#contact">View details <span>→</span></a>
+            <a class="button amber" href="contact.html?equipment=CAT+336">
+              Request Full Specification
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
           </div>
         </article>
+
         <article class="feature-item reverse">
           <div class="feature-photo">
             <img
               src="assets/images/dump-truck.jpeg"
-              alt="Heavy dump truck at a construction site"
+              alt="Volvo A30G articulated dump truck working on quarry haul road"
+              loading="lazy"
             />
           </div>
           <div class="feature-copy">
-            <p class="eyebrow">Articulated dump truck</p>
+            <p class="eyebrow">Articulated Hauler</p>
             <h3>Volvo A30G</h3>
             <dl>
               <div>
                 <dt>Year</dt>
-                <dd>2021</dd>
+                <dd class="tabular">2021</dd>
               </div>
               <div>
                 <dt>Hours</dt>
-                <dd>4,110</dd>
+                <dd class="tabular">4,110 hrs</dd>
               </div>
               <div>
-                <dt>Location</dt>
-                <dd>UK</dd>
+                <dt>Payload</dt>
+                <dd class="tabular">29.0 t</dd>
               </div>
             </dl>
             <p>
-              A practical, well-kept machine for earthmoving and infrastructure
-              work. Ask for availability and price.
+              Equipped with heated body, auto-lube system, and low-wear Michelin tyres. Thoroughly inspected and operational.
             </p>
-            <a class="text-link" href="#contact">View details <span>→</span></a>
+            <a class="button amber" href="contact.html?equipment=Volvo+A30G">
+              Request Full Specification
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
           </div>
         </article>
       </section>
 
       <section id="sell" class="sell-panel">
-        <div class="wrap sell-grid">
-          <div class="sell-photo">
-            <img
-              src="assets/images/wheel-loader.jpeg"
-              alt="Wheel loader at a construction site"
-              loading="lazy"
-            />
-          </div>
-          <div>
-            <p class="eyebrow">Selling equipment</p>
-            <h2>Ready to<br /><em>Move It On?</em></h2>
-            <p>
-              Send DAVE the details of your equipment. We’ll review the machine
-              and discuss the best next step.
-            </p>
-            <a href="contact.html?type=sell" class="button amber"
-              >Sell Your Equipment <b>→</b></a
-            >
+        <div class="wrap">
+          <div class="sell-container">
+            <div class="sell-grid">
+              <div class="sell-photo">
+                <img
+                  src="assets/images/wheel-loader.jpeg"
+                  alt="Volvo wheel loader in machine yard"
+                  loading="lazy"
+                />
+              </div>
+              <div class="sell-content">
+                <p class="eyebrow">Fleet Disposal &amp; Consignment</p>
+                <h2>Looking to Sell Surplus Plant?</h2>
+                <p>
+                  We purchase clean, well-maintained earthmoving equipment directly or broker sales to vetted commercial buyers across the UK and overseas.
+                </p>
+                <div class="button-row">
+                  <a href="contact.html?type=sell" class="button primary">
+                    Submit Machine Details
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="process section wrap" aria-labelledby="process-title">
+      <section class="section wrap" aria-labelledby="process-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Simple by design</p>
-            <h2 id="process-title">How it works</h2>
+            <p class="eyebrow">Straightforward Commercials</p>
+            <h2 id="process-title">How Transactions Work</h2>
           </div>
-          <p>Whether you are sourcing or selling, we keep the process clear.</p>
+          <p class="lead">
+            Clear steps whether you are expanding your active fleet or divesting assets.
+          </p>
         </div>
         <div class="process-grid">
-          <div>
-            <p class="eyebrow">Buying &amp; sourcing</p>
-            <ol>
+          <div class="process-column">
+            <h3>Sourcing &amp; Purchasing</h3>
+            <ol class="process-list">
               <li>
-                <span>01</span>
+                <span class="step-num">01</span>
                 <div>
-                  <h3>Tell Us What You Need</h3>
-                  <p>Share your equipment requirements.</p>
+                  <h4>Define Parameters</h4>
+                  <p>Specify machine category, required year range, hour threshold, and job site configuration.</p>
                 </div>
               </li>
               <li>
-                <span>02</span>
+                <span class="step-num">02</span>
                 <div>
-                  <h3>We Source It</h3>
-                  <p>DAVE identifies suitable equipment and options.</p>
+                  <h4>Inspection &amp; Verification</h4>
+                  <p>DAVE supplies serial checks, wear reports, engine telemetry, and detailed walk-around footage.</p>
                 </div>
               </li>
               <li>
-                <span>03</span>
+                <span class="step-num">03</span>
                 <div>
-                  <h3>We Make It Happen</h3>
-                  <p>Agree the details and move forward.</p>
+                  <h4>Settlement &amp; Haulage</h4>
+                  <p>Clear invoices, secure escrow or pro-forma processing, and direct transport to your UK site or chosen port.</p>
                 </div>
               </li>
             </ol>
           </div>
-          <div>
-            <p class="eyebrow">Selling</p>
-            <ol>
+          <div class="process-column">
+            <h3>Selling Equipment</h3>
+            <ol class="process-list">
               <li>
-                <span>01</span>
+                <span class="step-num">01</span>
                 <div>
-                  <h3>Send Equipment Details</h3>
-                  <p>Tell us about the machine you want to sell.</p>
+                  <h4>Send Machine Details</h4>
+                  <p>Upload photos, hour meter reading, maintenance notes, and current machine location.</p>
                 </div>
               </li>
               <li>
-                <span>02</span>
+                <span class="step-num">02</span>
                 <div>
-                  <h3>We Review the Machine</h3>
-                  <p>We consider the equipment and the information provided.</p>
+                  <h4>Appraisal &amp; Offer</h4>
+                  <p>We review current market demand and provide a direct purchase quote or brokered sales valuation.</p>
                 </div>
               </li>
               <li>
-                <span>03</span>
+                <span class="step-num">03</span>
                 <div>
-                  <h3>Discuss the Sale</h3>
-                  <p>We’ll talk through the next step with you directly.</p>
+                  <h4>Collection &amp; Payment</h4>
+                  <p>Full payment cleared prior to low-loader collection from your premises.</p>
                 </div>
               </li>
             </ol>
@@ -305,67 +366,81 @@
         </div>
       </section>
 
-      <section class="trust">
-        <div class="wrap">
-          <p class="eyebrow">What DAVE does</p>
-          <div>
-            <span>UK Based</span><span>International Buyers</span
-            ><span>Equipment Sourcing</span><span>Direct Communication</span>
+      <div class="trust-strip">
+        <div class="wrap trust-items">
+          <div class="trust-item">
+            <strong>UK-Based Specialist</strong>
+            <span>Verified commercial inventory</span>
+          </div>
+          <div class="trust-item">
+            <strong>Certified Plant Checks</strong>
+            <span>Hours and serials checked against registers</span>
+          </div>
+          <div class="trust-item">
+            <strong>Worldwide Freight</strong>
+            <span>Ro-Ro and container port delivery</span>
+          </div>
+          <div class="trust-item">
+            <strong>Direct Communication</strong>
+            <span>No intermediaries or call centres</span>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="source" class="sourcing">
+      <section id="source" class="section sourcing-section" aria-labelledby="sourcing-title">
         <div class="wrap sourcing-grid">
-          <div>
-            <p class="eyebrow on-dark">Can’t see it?</p>
-            <h2>Looking for<br /><em>Something Specific?</em></h2>
+          <div class="sourcing-info">
+            <p class="eyebrow">Custom Procurement</p>
+            <h2 id="sourcing-title">Looking for a Specific Specification?</h2>
             <p>
-              Tell us what you need. DAVE can help source equipment based on
-              your requirements, budget and intended use.
+              If our current inventory does not match your precise job requirements, our procurement network identifies vetted machines across reputable dealer networks and contractor fleets.
             </p>
-            <p class="source-note">
-              The more detail you provide, the more useful we can be.
-            </p>
+            <div class="sourcing-note">
+              <strong>Technical Guidance:</strong> Including exact bucket capacity, hydraulic lines, undercarriage condition, or track width helps us source exact matches faster.
+            </div>
           </div>
-          <form id="sourcing-form" novalidate>
-            <div class="form-row">
-              <label
-                >Name<input required name="name" autocomplete="name" /></label
-              ><label
-                >Company<input name="company" autocomplete="organization"
-              /></label>
+          <form id="sourcing-form" class="sourcing-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="src-name">Your Name *</label>
+                <input id="src-name" required name="name" autocomplete="name" placeholder="Full name" />
+              </div>
+              <div class="form-group">
+                <label for="src-company">Company</label>
+                <input id="src-company" name="company" autocomplete="organization" placeholder="Business name" />
+              </div>
             </div>
-            <div class="form-row">
-              <label
-                >Email<input
-                  required
-                  type="email"
-                  name="email"
-                  autocomplete="email" /></label
-              ><label>Phone<input name="phone" autocomplete="tel" /></label>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="src-email">Email Address *</label>
+                <input id="src-email" required type="email" name="email" autocomplete="email" placeholder="name@company.com" />
+              </div>
+              <div class="form-group">
+                <label for="src-phone">Telephone *</label>
+                <input id="src-phone" required name="phone" autocomplete="tel" placeholder="+44 7000 000000" />
+              </div>
             </div>
-            <label
-              >Equipment required<input
-                required
-                name="equipment"
-                placeholder="e.g. 20 tonne excavator"
-            /></label>
-            <div class="form-row">
-              <label>Make/model preference<input name="preference" /></label
-              ><label>Budget<input name="budget" /></label>
+            <div class="form-group">
+              <label for="src-equip">Equipment Required *</label>
+              <input id="src-equip" required name="equipment" placeholder="e.g. 20-tonne excavator, 3,000 max hours" />
             </div>
-            <label
-              >Location<input
-                name="location"
-                placeholder="UK / region / country" /></label
-            ><label
-              >Additional requirements<textarea
-                name="details"
-                rows="3"
-              ></textarea></label
-            ><button class="button amber" type="submit">
-              Send Request <b>→</b>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="src-make">Make / Model Preference</label>
+                <input id="src-make" name="preference" placeholder="e.g. CAT 320, Volvo EC220" />
+              </div>
+              <div class="form-group">
+                <label for="src-budget">Target Budget (£ / €)</label>
+                <input id="src-budget" name="budget" placeholder="Approximate figure" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="src-details">Operational Notes &amp; Attachments</label>
+              <textarea id="src-details" name="details" rows="3" placeholder="Auxiliary piping, quick hitch, delivery destination, target date..."></textarea>
+            </div>
+            <button class="button primary" type="submit">
+              Submit Sourcing Request
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
             <p class="form-message" role="status"></p>
           </form>
@@ -376,30 +451,31 @@
     <footer id="contact">
       <div class="wrap footer-top">
         <div>
-          <a class="brand" href="#top">DAVE<span>.</span></a>
-          <p>Heavy equipment sourcing and sales.</p>
+          <a class="brand" href="index.html">DAVE<span>.</span></a>
+          <p>Heavy construction and earthmoving equipment sourcing, inspections, and international sales.</p>
         </div>
-        <div class="footer-nav">
+        <div class="footer-links">
           <p class="eyebrow">Explore</p>
-          <a href="#equipment">Equipment</a><a href="#source">Source</a
-          ><a href="#sell">Sell</a><a href="about.html">About</a
-          ><a href="contact.html">Contact</a>
+          <a href="#equipment">Current Inventory</a>
+          <a href="#source">Sourcing Request</a>
+          <a href="#sell">Sell Machinery</a>
+          <a href="about.html">About DAVE</a>
+          <a href="contact.html">Contact Us</a>
         </div>
-        <div>
-          <p class="eyebrow">Get in touch</p>
-          <a class="contact-link" href="mailto:hello@davemachinery.com"
-            >hello@davemachinery.com <span>↗</span></a
-          ><a class="contact-link" href="contact.html"
-            >Send an enquiry <span>↗</span></a
-          >
+        <div class="footer-links">
+          <p class="eyebrow">Direct Contact</p>
+          <a href="mailto:hello@davemachinery.com">hello@davemachinery.com</a>
+          <a href="tel:+441618204490">+44 (0) 161 820 4490</a>
+          <span>United Kingdom</span>
         </div>
       </div>
       <div class="wrap footer-bottom">
-        <span>© DAVE. All rights reserved.</span
-        ><span
-          ><a href="#">Privacy</a><a href="#">Terms</a
-          ><a href="#">Cookies</a></span
-        >
+        <span>&copy; DAVE Machinery Ltd. All rights reserved.</span>
+        <div>
+          <a href="contact.html">Privacy</a>
+          <a href="contact.html">Terms of Sale</a>
+          <a href="contact.html">Inspection Standards</a>
+        </div>
       </div>
     </footer>
     <script src="script.js"></script>
